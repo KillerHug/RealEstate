@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context="in.orangeapp.realestate.in.doorsteps.realestate.ROIcalculator">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/row_toolbar" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <EditText
+        android:id="@+id/purchase_price"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        android:hint="Purchase Price *"
+        android:inputType="numberDecimal"
+        android:paddingLeft="@dimen/_5sdp"
+        android:textColor="@color/blackmain"
+        android:textColorHint="@color/blackmain"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <EditText
+        android:id="@+id/sellingprice"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        android:hint="Selling Price *"
+        android:inputType="numberDecimal"
+        android:paddingLeft="@dimen/_5sdp"
+        android:singleLine="true"
+        android:textColor="@color/blackmain"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <EditText
+        android:id="@+id/ov_expences"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        android:hint="Overall Expences *"
+        android:inputType="numberDecimal"
+        android:paddingLeft="@dimen/_5sdp"
+        android:singleLine="true"
+        android:textColor="@color/blackmain"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <EditText
+        android:id="@+id/hli_year"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        android:hint="Holding lenth in years *"
+        android:inputType="number"
+        android:paddingLeft="@dimen/_5sdp"
+        android:singleLine="true"
+        android:textColor="@color/blackmain"
+        android:textColorHint="@color/white"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button_login_background"
+            android:backgroundTint="@color/colorPrimary"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/button_login_background"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="Calculate"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total ROI = 0%"
+        android:textColor="@color/white"
+        android:id="@+id/total_result"
+         android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:justificationMode="inter_word"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="ROI (Return on Investment) measures the gain or loss generated on an investment relative to the amount of money invested. ROI is usually expressed as a percentage and is typically used for financial decisions, to compare a profitability or to compare the efficiency of different investments."
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* The calculations are for refrence purpose only. We have made every effort to ensure the accuracy and reliability of the calculations. We shall not be liable for any loss or damage suffered from the decision made by you."
+        android:justificationMode="inter_word"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_10sdp"
+        />
+
+
+</LinearLayout>

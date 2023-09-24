@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+
+    tools:context="in.orangeapp.realestate.in.doorsteps.realestate.Areacalculaotr">
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/row_toolbar" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_30sdp"
+         android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+             android:background="@drawable/stroke"
+            android:id="@+id/seller_type_layout"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/feet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                android:background="#00000000"
+                 android:hint="0"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_double_arrow_24"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square Feet"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/custom" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke"
+            android:id="@+id/seller_type_layout"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/yards"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                android:inputType="numberDecimal"
+                android:background="#00000000"
+                 android:hint="0"
+                 android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_double_arrow_24"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square Yards"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/custom" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke"
+            android:id="@+id/seller_type_layout"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/meters"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                android:background="#00000000"
+
+                 android:hint="0"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_double_arrow_24"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square Meters"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/custom" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke"
+            android:id="@+id/seller_type_layout"
+            android:paddingLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/acre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:padding="@dimen/_10sdp"
+                android:background="#00000000"
+                android:maxLength="8"
+                 android:hint="0"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_double_arrow_24"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acre"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/custom" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

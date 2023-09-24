@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_go_profile"
+            android:checkable="false"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/menu_go_latest"
+            android:checked="false"
+            android:icon="@drawable/ic_latest"
+            android:title="General Documents" />
+        <item
+            android:id="@+id/menu_go_property"
+            android:checked="false"
+            android:icon="@drawable/ic_contact"
+            android:title="Property Calculators" />
+        <item
+            android:id="@+id/roi_calculator"
+            android:visible="false"
+            android:checked="false"
+            android:icon="@drawable/ic_contact"
+            android:title="ROI Calculator" />
+        <item
+            android:id="@+id/affor_calculator"
+            android:checked="false"
+            android:visible="false"
+            android:icon="@drawable/ic_contact"
+            android:title="Affordablity Calculator" />
+        <item
+            android:id="@+id/menu_go_favourite"
+            android:checked="false"
+            android:visible="false"
+            android:icon="@drawable/ic_compass"
+            android:title="Compass" />
+         <item
+            android:id="@+id/menu_go_add_properties"
+            android:checkable="false"
+            android:icon="@drawable/ic_buy_sell_property_drawer"
+            android:title="About us" />
+        <item
+            android:id="@+id/menu_go_contact"
+            android:checkable="false"
+            android:icon="@drawable/ic_properties"
+            android:title="@string/menu_contact_us" />
+        <item
+            android:id="@+id/menu_go_setting"
+            android:checked="false"
+            android:icon="@drawable/ic_baseline_share_24"
+            android:title="Invite Friends" />
+        <item
+            android:id="@+id/menu_go_login"
+            android:checkable="false"
+            android:visible="false"
+            android:icon="@drawable/ic_login"
+            android:title="@string/menu_login" />
+        <item
+            android:id="@+id/menu_go_logout"
+            android:checkable="false"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/menu_logout" />
+
+    </group>
+</menu>

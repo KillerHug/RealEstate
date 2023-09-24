@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivAdsImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvAdsType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/labelAdsType"
+        app:layout_constraintTop_toTopOf="@+id/labelAdsType"
+        tools:text="Ads Type" />
+
+    <TextView
+        android:id="@+id/labelAdsType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:text="Ads Type:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <TextView
+        android:id="@+id/labelUserNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:text="Mobile No.:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdsType" />
+
+    <TextView
+        android:id="@+id/tvUserNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/labelUserNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdsType"
+        tools:text="Ads Type" />
+
+    <TextView
+        android:id="@+id/labelGeoLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:text="Geo Location:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/labelUserNumber" />
+
+    <TextView
+        android:id="@+id/tvGeoLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/labelGeoLoc"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserNumber"
+        tools:text="Ads Type" />
+
+    <TextView
+        android:id="@+id/labelDOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:text="Date of Publishing: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/labelGeoLoc" />
+
+    <TextView
+        android:id="@+id/tvDOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/labelDOP"
+        app:layout_constraintTop_toBottomOf="@+id/labelGeoLoc"
+        tools:text="Ads Type" />
+
+    <TextView
+        android:id="@+id/labelBalanceDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:text="Total Days: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/labelDOP" />
+
+    <TextView
+        android:id="@+id/tvBalanceDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/labelBalanceDays"
+        app:layout_constraintTop_toBottomOf="@+id/labelDOP"
+        tools:text="Ads Type" />
+    <TextView
+        android:id="@+id/labelRemainingDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:maxLines="1"
+        android:text="Remaining Days: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/tvBalanceDays"
+        app:layout_constraintTop_toBottomOf="@+id/labelDOP" />
+
+    <TextView
+        android:id="@+id/tvRemainingDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:maxLines="1"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintStart_toEndOf="@+id/labelRemainingDays"
+        app:layout_constraintTop_toBottomOf="@+id/labelDOP"
+        tools:text="Ads Type" />
+
+    <ImageView
+        android:id="@+id/ivAdsEdit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivAdsDelete" />
+
+    <ImageView
+        android:id="@+id/ivAdsDelete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:src="@drawable/ic_baseline_delete_24"
+        app:layout_constraintEnd_toStartOf="@+id/ivAdsEdit"
+        app:layout_constraintTop_toTopOf="@+id/tvAdsType" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#d6d6d6"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        tools:layout_editor_absoluteX="6dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

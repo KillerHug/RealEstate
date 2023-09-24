@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/properties_reycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@color/bg"
+        tools:listitem="@layout/proprty_lis_row"
+        android:clipToPadding="false"
+        android:padding="@dimen/item_offset"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+            <include
+                layout="@layout/proprty_lis_row"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                />
+            <include
+                layout="@layout/proprty_lis_row"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

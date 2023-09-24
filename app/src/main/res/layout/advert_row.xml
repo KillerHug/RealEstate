@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            android:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <VideoView
+            android:id="@+id/idVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_centerInParent="true" />
+
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/silverround"
+            android:backgroundTint="@color/gnt_red"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:text="  Delete  "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:tint="@color/black" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/header_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/custom"
+                android:text="loading..."
+                android:textAllCaps="true"
+                android:textColor="@color/blackmain"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

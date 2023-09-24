@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RealEstate_V1.5.iml" filepath="$PROJECT_DIR$/.idea/modules/RealEstate_V1.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IRBottomNavigationLib/RealEstate_V1.5.IRBottomNavigationLib.iml" filepath="$PROJECT_DIR$/.idea/modules/IRBottomNavigationLib/RealEstate_V1.5.IRBottomNavigationLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IRBottomNavigationLib/RealEstate_V1.5.IRBottomNavigationLib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/IRBottomNavigationLib/RealEstate_V1.5.IRBottomNavigationLib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IRBottomNavigationLib/RealEstate_V1.5.IRBottomNavigationLib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/IRBottomNavigationLib/RealEstate_V1.5.IRBottomNavigationLib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IRBottomNavigationLib/RealEstate_V1.5.IRBottomNavigationLib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/IRBottomNavigationLib/RealEstate_V1.5.IRBottomNavigationLib.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmoothCheckBox-master/RealEstate_V1.5.SmoothCheckBox-master.iml" filepath="$PROJECT_DIR$/.idea/modules/SmoothCheckBox-master/RealEstate_V1.5.SmoothCheckBox-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmoothCheckBox-master/RealEstate_V1.5.SmoothCheckBox-master.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/SmoothCheckBox-master/RealEstate_V1.5.SmoothCheckBox-master.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmoothCheckBox-master/RealEstate_V1.5.SmoothCheckBox-master.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SmoothCheckBox-master/RealEstate_V1.5.SmoothCheckBox-master.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmoothCheckBox-master/RealEstate_V1.5.SmoothCheckBox-master.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/SmoothCheckBox-master/RealEstate_V1.5.SmoothCheckBox-master.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidsaripaarmaster/RealEstate_V1.5.androidsaripaarmaster.iml" filepath="$PROJECT_DIR$/.idea/modules/androidsaripaarmaster/RealEstate_V1.5.androidsaripaarmaster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidsaripaarmaster/RealEstate_V1.5.androidsaripaarmaster.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidsaripaarmaster/RealEstate_V1.5.androidsaripaarmaster.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidsaripaarmaster/RealEstate_V1.5.androidsaripaarmaster.main.iml" filepath="$PROJECT_DIR$/.idea/modules/androidsaripaarmaster/RealEstate_V1.5.androidsaripaarmaster.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidsaripaarmaster/RealEstate_V1.5.androidsaripaarmaster.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/androidsaripaarmaster/RealEstate_V1.5.androidsaripaarmaster.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RealEstate_V1.5.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RealEstate_V1.5.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RealEstate_V1.5.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RealEstate_V1.5.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RealEstate_V1.5.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RealEstate_V1.5.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RealEstate_V1.5.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RealEstate_V1.5.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/httpclient/RealEstate_V1.5.httpclient.iml" filepath="$PROJECT_DIR$/.idea/modules/httpclient/RealEstate_V1.5.httpclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/httpclient/RealEstate_V1.5.httpclient.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/httpclient/RealEstate_V1.5.httpclient.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/httpclient/RealEstate_V1.5.httpclient.main.iml" filepath="$PROJECT_DIR$/.idea/modules/httpclient/RealEstate_V1.5.httpclient.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/httpclient/RealEstate_V1.5.httpclient.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/httpclient/RealEstate_V1.5.httpclient.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/RealEstate_V1.5.imagepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/RealEstate_V1.5.imagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/RealEstate_V1.5.imagepicker.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/RealEstate_V1.5.imagepicker.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/RealEstate_V1.5.imagepicker.main.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/RealEstate_V1.5.imagepicker.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/RealEstate_V1.5.imagepicker.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/RealEstate_V1.5.imagepicker.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativetemplates/RealEstate_V1.5.nativetemplates.iml" filepath="$PROJECT_DIR$/.idea/modules/nativetemplates/RealEstate_V1.5.nativetemplates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativetemplates/RealEstate_V1.5.nativetemplates.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/nativetemplates/RealEstate_V1.5.nativetemplates.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativetemplates/RealEstate_V1.5.nativetemplates.main.iml" filepath="$PROJECT_DIR$/.idea/modules/nativetemplates/RealEstate_V1.5.nativetemplates.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nativetemplates/RealEstate_V1.5.nativetemplates.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/nativetemplates/RealEstate_V1.5.nativetemplates.unitTest.iml" />
+    </modules>
+  </component>
+</project>

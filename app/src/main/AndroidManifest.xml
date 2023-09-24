@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.orangeapp.realestate"> <!-- com.doorsteps.realestate -->
+    <uses-sdk tools:overrideLibrary="com.github.ornolfr.ratingview" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".AdsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CreateAdvertisementActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddRequirementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImagePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityShowProperties"
+            android:exported="false" />
+        <activity
+            android:name=".Childadmin"
+            android:exported="false" />
+        <activity android:name="in.orangeapp.All_Calculator" />
+        <activity android:name=".AddAdvertising" />
+        <activity android:name=".Morgagecalculator" />
+        <activity android:name=".ROIcalculator" />
+        <activity android:name=".MySubAdmin" />
+        <activity android:name=".ProfileAcitivity" />
+        <activity android:name=".Areacalculaotr" />
+        <activity android:name=".Generaldocuments" />
+        <activity android:name=".Contactus" />
+        <activity android:name=".Propertylist" />
+        <activity android:name=".SearchProperty" />
+        <activity android:name=".Addproperty" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gm.ComposeActivityGmail"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gm" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".SearchActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".AdvanceSearchActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".PrivacyActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SignInActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SignUpActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PropertyDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FullGalleryActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileEditActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FloorImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" /> <!-- <activity -->
+        <!-- android:name=".AddPropertiesActivity" -->
+        <!-- android:configChanges="orientation|screenSize" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustPan" /> -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+        <meta-data
+            android:name="com.onesignal.NotificationAccentColor.DEFAULT"
+            android:value="FF0072bb" />
+        <meta-data
+            android:name="firebase_crash_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.onesignal.GcmBroadcastReceiver"
+            android:exported="false"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.onesignal.NotificationOpenedActivityHMS"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.onesignal.BootUpReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.onesignal.UpgradeReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="in.orangeapp.util.IntroSlider"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+    </application>
+
+</manifest>

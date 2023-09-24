@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_layout"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/bottomlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/bottomnavibackground"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_13sdp"
+                        android:fontFamily="@font/custom"
+                        android:text="State"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/silverround"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Loading..." />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        android:fontFamily="@font/custom"
+                        android:text="District"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/disctrict"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/silverround"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Loading..." />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/custom"
+                    android:text="loading..."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/custom"
+                    android:text="loading.."
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp" />
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/custom"
+                    android:text="loading.."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp" />
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CBEBFF"
+                    android:fontFamily="@font/custom"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text=" "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <TextView
+                    android:id="@+id/seller_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/silverroundmore"
+                    android:fontFamily="@font/custom"
+                    android:paddingLeft="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="AC Service Repair"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:background="@drawable/silverround"
+                        android:padding="@dimen/_5sdp"
+                        android:text="   Edit    " />
+
+                    <TextView
+                        android:id="@+id/total_property"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/custom"
+                        android:text="loading..."
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <TextView
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/silverround"
+                        android:backgroundTint="@color/gnt_red"
+                        android:padding="@dimen/_5sdp"
+                        android:text="  Delete  "
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

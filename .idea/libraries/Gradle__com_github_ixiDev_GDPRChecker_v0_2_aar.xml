@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ixiDev:GDPRChecker:v0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fc3db309fe4333b2ab0b1820d126e1bc/jetified-GDPRChecker-v0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fc3db309fe4333b2ab0b1820d126e1bc/jetified-GDPRChecker-v0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fc3db309fe4333b2ab0b1820d126e1bc/jetified-GDPRChecker-v0.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1dafbf2c7b562b5edb12fd7212298f9f/jetified-GDPRChecker-v0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1dafbf2c7b562b5edb12fd7212298f9f/jetified-GDPRChecker-v0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1dafbf2c7b562b5edb12fd7212298f9f/jetified-GDPRChecker-v0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89bc486ec934d904116c4e457580f7ff/jetified-GDPRChecker-v0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89bc486ec934d904116c4e457580f7ff/jetified-GDPRChecker-v0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89bc486ec934d904116c4e457580f7ff/jetified-GDPRChecker-v0.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ixiDev/GDPRChecker/v0.2/6f11ee4255e92c195f08aaab6d9efd88f8322f80/GDPRChecker-v0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

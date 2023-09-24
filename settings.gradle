@@ -1,0 +1,8 @@
+include ':nativetemplates'
+include ':imagepicker'
+include ':app' ,
+        ':androidsaripaarmaster',
+        ':httpclient',
+        ':SmoothCheckBox-master',
+        ':IRBottomNavigationLib'
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="in.orangeapp.realestate.in.doorsteps.realestate.Propertylist">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/row_toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/properties_reycle"
+        android:layout_width="match_parent"
+         android:layout_below="@+id/total_layout"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+            <include
+                layout="@layout/proprty_lis_row"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                />
+            <include
+                layout="@layout/proprty_lis_row"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_25sdp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

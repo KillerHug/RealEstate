@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 32
+    defaultConfig {
+        applicationId "in.orangeapp.realestate"
+        manifestPlaceholders = [onesignal_app_id               : "xxx-xx-xx-xx-xxxxx",
+                                onesignal_google_project_number: "REMOTE"]
+
+        minSdkVersion 23
+        targetSdkVersion 32
+        versionCode 6
+        versionName "1.0.2"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildTypes.each {
+        it.buildConfigField 'String', 'server_url', server_url
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+}
+//password S@ndeep#@!$678
+//path E:\project\RealEstate_V1.5\app\doorstate.jks
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.exifinterface:exifinterface:1.3.2'
+    implementation 'androidx.media:media:1.3.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.gms:play-services-ads:19.8.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.onesignal:OneSignal:3.15.3@aar'
+    implementation 'com.github.ornolfr:rating-view:0.1.2@aar'
+    implementation project(':androidsaripaarmaster')
+    implementation project(':httpclient')
+    implementation 'com.google.firebase:firebase-messaging:21.1.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.3'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+    implementation 'me.relex:circleindicator:2.1.4@aar'
+    implementation 'cn.gavinliu:ShapedImageView:0.8.7'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.loopj.android:android-async-http:1.4.11'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.github.mjn1369:prettydialog:1.0.4'
+    implementation 'com.github.ixiDev:GDPRChecker:v0.2'
+    implementation 'com.facebook.android:audience-network-sdk:6.2.0'
+    implementation 'com.facebook.android:facebook-login:5.15.3'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'com.github.patgdut:RadioRealButton:v2.1.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //Volley
+    implementation 'com.android.volley:volley:1.2.1'
+
+    // Search Spinner
+    // implementation 'com.github.leoncydsilva:SearchableSpinner:1.0.0'
+    implementation 'com.github.MdFarhanRaja:SearchableSpinner:2.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    //layout to image
+    implementation 'com.github.vipulasri.layouttoimage:library:1.0.0'
+    implementation 'com.jsibbold:zoomage:1.2.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'com.github.AppIntro:AppIntro:6.2.0'
+
+    implementation 'androidx.work:work-runtime-ktx:2.7.0'
+
+    //    lottie animation
+    implementation "com.airbnb.android:lottie:3.7.0"
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+//    implementation project(':library')
+    implementation project(path: ':imagepicker')
+    implementation project(':nativetemplates')
+    implementation project(path: ':SmoothCheckBox-master')
+    implementation project(path: ':IRBottomNavigationLib')
+    implementation 'com.jaredrummler:colorpicker:1.1.0'
+}

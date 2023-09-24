@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_15sdp"
+        tools:context=".CreateAdvertisementActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/create_advertisement"
+            android:textColor="@color/main_orange"
+            android:textSize="@dimen/_20sdp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/advertiser"
+            android:textColor="@color/filter_title_text"
+            android:textSize="@dimen/_13sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_stroke">
+
+            <Spinner
+                android:id="@+id/spinner_advertiser"
+                android:layout_width="match_parent"
+                style="@style/mySpinnerItemStyle"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llEditorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/editorial_location_no"
+                android:textColor="@color/filter_title_text"
+                android:textSize="@dimen/_13sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke">
+
+                <Spinner
+                    android:id="@+id/spinner_editorial"
+                    style="@style/mySpinnerItemStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSponsored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/sponsored_geo_location"
+                android:textColor="@color/filter_title_text"
+                android:textSize="@dimen/_13sdp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_stroke">
+
+
+                <Spinner
+                    android:id="@+id/spinner_sponsor"
+                    style="@style/mySpinnerItemStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tvSelectedName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/filter_title_text"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textColor="@color/filter_title_text"
+            android:textSize="@dimen/_13sdp" />
+
+        <EditText
+            android:id="@+id/etUserMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_stroke"
+            android:hint="@string/mobile_number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingVertical="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:text="@string/advertisement_type"
+            android:textColor="@color/filter_title_text"
+            android:textSize="@dimen/_13sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_stroke">
+
+            <Spinner
+                android:id="@+id/spinner_type"
+                style="@style/mySpinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:text="@string/image_video_aspect_ratio"
+            android:textColor="@color/filter_title_text"
+            android:textSize="@dimen/_13sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_stroke">
+
+            <Spinner
+                android:id="@+id/spinner_ratio"
+                style="@style/mySpinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:text="@string/click_to_action_cta_button"
+            android:textColor="@color/filter_title_text"
+            android:textSize="@dimen/_13sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_stroke">
+
+            <Spinner
+                android:id="@+id/spinner_cta"
+                style="@style/mySpinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link for above CTA:"
+            android:textColor="@color/filter_title_text"
+            android:textSize="@dimen/_13sdp" />
+
+        <EditText
+            android:id="@+id/etCTALink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_stroke"
+            android:inputType="text"
+            android:paddingVertical="10dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color for CTA Button"
+            android:textColor="@color/filter_title_text"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:id="@+id/tvColorCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_stroke"
+            android:paddingVertical="10dp"
+            android:paddingStart="10dp"
+            android:hint="Click for Color Code"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_of_days_for_display"
+            android:textColor="@color/filter_title_text"
+            android:textSize="@dimen/_13sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/bg_stroke">
+
+            <Spinner
+                android:id="@+id/spinner_days"
+                style="@style/mySpinnerItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Upload Image/Video"
+            android:textColor="@color/filter_title_text"
+            android:textSize="@dimen/_13sdp" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="@color/gray_light"
+            android:paddingVertical="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/browse" />
+
+        <TextView
+            android:id="@+id/tvFilePath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/main_orange"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCreateAds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/main_orange"
+            android:paddingVertical="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/create_advertisement" />
+
+    </LinearLayout>
+</ScrollView>

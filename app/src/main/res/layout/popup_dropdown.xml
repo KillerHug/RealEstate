@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Edit"
+        android:id="@+id/edit"
+        android:textSize="13dp"
+        android:textColor="#000"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#C6C6C6"
+        />
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Delete"
+        android:textSize="13dp"
+        android:id="@+id/delete"
+        android:textColor="#000"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#C6C6C6"
+        />
+
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="Share"
+        android:id="@+id/share"
+        android:textSize="13dp"
+        android:textColor="#000"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#C6C6C6"
+        />
+
+
+</LinearLayout>

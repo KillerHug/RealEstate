@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/row_toolbar" />
+
+
+    <include
+        android:id="@+id/mainview"
+        layout="@layout/mainview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_78sdp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgmain"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:onClick="updateprofile"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_home_avatar_photoicon" />
+
+        <ImageView
+            android:id="@+id/remove_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_baseline_cancel_24"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainview"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:elevation="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:background="@drawable/bottomnavibackground"
+                android:gravity="center"
+                android:onClick="visitingcard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/uploadvisitingtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/silverround"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Upload Business Card"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/visiting_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/visiting_card"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/remove_visiting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/ic_baseline_cancel_24"
+                android:visibility="gone"
+
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/silverround"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="    SAVE    "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/team_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/save"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/createsubadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/main_orange"
+            android:text="@string/add_team_member"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/mysubsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/main_orange"
+            android:text="@string/my_team_members"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/team_layout"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCreateAds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="40dp"
+            android:backgroundTint="@color/main_orange"
+            android:text="@string/create_ads"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnActiveAds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="40dp"
+            android:backgroundTint="@color/main_orange"
+            android:text="@string/active_advt"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</RelativeLayout>

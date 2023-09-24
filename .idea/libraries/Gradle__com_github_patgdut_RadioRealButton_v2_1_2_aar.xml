@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.patgdut:RadioRealButton:v2.1.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca53f3d70a04343dd6a451a878ca0d80/jetified-RadioRealButton-v2.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca53f3d70a04343dd6a451a878ca0d80/jetified-RadioRealButton-v2.1.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca53f3d70a04343dd6a451a878ca0d80/jetified-RadioRealButton-v2.1.2/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16bb2acffc1a528b47eea85855fd2fc1/jetified-RadioRealButton-v2.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16bb2acffc1a528b47eea85855fd2fc1/jetified-RadioRealButton-v2.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/16bb2acffc1a528b47eea85855fd2fc1/jetified-RadioRealButton-v2.1.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12a329b380eeb90deff2c0f056073144/jetified-RadioRealButton-v2.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12a329b380eeb90deff2c0f056073144/jetified-RadioRealButton-v2.1.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12a329b380eeb90deff2c0f056073144/jetified-RadioRealButton-v2.1.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.patgdut/RadioRealButton/v2.1.2/30d6f4a7cccec22b00b0d9b318f320a749cc0d99/RadioRealButton-v2.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.patgdut/RadioRealButton/v2.1.2/5781e5bbada9ba009541c22d945f7fad84bc2a42/RadioRealButton-v2.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
